@@ -9,6 +9,7 @@ public class Task {
     private Date createDate;
     private Date completedDate;
 
+    public Task(){}
     public Task(String title, String description, boolean completed, Date createDate, Date completedDate) {
         this.title = title;
         this.description = description;
