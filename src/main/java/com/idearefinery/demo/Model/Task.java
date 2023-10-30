@@ -12,7 +12,6 @@ public class Task {
 
     public Task(){}
 
-
     public Task(String title, String description, boolean completed, Date createDate, Date completedDate, int id) {
         super();
         this.title = title;
