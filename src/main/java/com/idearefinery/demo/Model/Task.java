@@ -8,14 +8,19 @@ public class Task {
     private boolean completed;
     private Date createDate;
     private Date completedDate;
+    private int id;
 
     public Task(){}
-    public Task(String title, String description, boolean completed, Date createDate, Date completedDate) {
+
+
+    public Task(String title, String description, boolean completed, Date createDate, Date completedDate, int id) {
+        super();
         this.title = title;
         this.description = description;
         this.completed = completed;
         this.createDate = createDate;
         this.completedDate = completedDate;
+        this.id = id;
     }
 
     public String getTitle() {
@@ -57,5 +62,13 @@ public class Task {
     public void setCompletedDate(Date completedDate) {
         this.completedDate = completedDate;
     }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
 }
