@@ -1,4 +1,5 @@
-package com.idearefinery.demo;
+package com.idearefinery.demo.Model;
+
 import java.util.Date;
 
 public class Task {
@@ -7,6 +8,14 @@ public class Task {
     private boolean completed;
     private Date createDate;
     private Date completedDate;
+
+    public Task(String title, String description, boolean completed, Date createDate, Date completedDate) {
+        this.title = title;
+        this.description = description;
+        this.completed = completed;
+        this.createDate = createDate;
+        this.completedDate = completedDate;
+    }
 
     public String getTitle() {
         return title;
@@ -47,5 +56,5 @@ public class Task {
     public void setCompletedDate(Date completedDate) {
         this.completedDate = completedDate;
     }
-}
 
+}
